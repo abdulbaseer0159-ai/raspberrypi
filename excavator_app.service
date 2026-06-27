@@ -1,0 +1,13 @@
+[Unit]
+Description=Excavator Web App
+After=network-online.target
+
+[Service]
+User=baseer
+WorkingDirectory=/home/baseer/servo_camera_project
+ExecStart=/home/baseer/servo_camera_project/venv/bin/python app.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
