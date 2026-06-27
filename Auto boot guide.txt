@@ -1,0 +1,4 @@
+Make start_tunnel.sh executable:
+Run this command in terminal:
+chmod +x ~/servo_camera_project/start_tunnel.sh
+
