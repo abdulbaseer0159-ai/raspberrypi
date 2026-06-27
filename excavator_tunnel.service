@@ -1,0 +1,14 @@
+[Unit]
+Description=Excavator Cloudflare Tunnel
+After=excavator_app.service
+Requires=excavator_app.service
+
+[Service]
+User=baseer
+WorkingDirectory=/home/baseer/servo_camera_project
+ExecStart=/bin/bash /home/baseer/servo_camera_project/start_tunnel.sh
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
